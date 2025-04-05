@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Shyam Kumar Kothapelly</a>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+    </header>
+
+    <section class="hero">
+        <h1>Hi, I'm <span>Shyam Kumar Kothapelly</span></h1>
+        <p>A passionate Web Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            I'm a self-taught developer passionate about creating clean, responsive websites. 
+            My skills include HTML, CSS, JavaScript, and React.
+          </p>
+          <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+          </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="filter-buttons">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="web">Web</button>
+          <button data-filter="js">JavaScript</button>
+        </div>
+        <div class="projects-grid">
+          <!-- Project items will be added dynamically via JS -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      
+    </section>
+
+    <footer>
+        <div class="footer-content">
+          <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+    </footer>
+
+  <!-- We’ll add sections here step by step -->
+  <script src="scripts/main.js"></script>
+</body>
+</html>
