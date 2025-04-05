@@ -9,12 +9,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
+    flex-wrap: nowrap;
     
   }
   .nav-group {
     display: flex;
     align-items: center;
     gap: 1.5rem; /* Space between links and toggle */
+    white-space: nowrap;
   }
 
   .nav-links {
@@ -28,12 +30,15 @@ body {
     cursor: pointer;
     color: inherit;
     padding: 0.5rem;
+    flex-shrink: 0;
   }
   .logo {
     font-weight: bold;
     font-size: 1.5rem;
     text-decoration: none;
     color: #333;
+    white-space: nowrap;
+    margin-right: auto;
   }
   
   nav a {
@@ -196,23 +201,17 @@ body {
     border-radius: 4px;
     font-size: 12px;
   }
-  
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
-    .projects-grid {
-      grid-template-columns: 1fr;
-    }
-  }
 
   /* Mobile styles */
 @media (max-width: 768px) {
     header {
-      flex-direction: column;
-      padding: 1rem;
-    }
+        flex-wrap: wrap; /* Allow wrapping only on mobile */
+      }
 
-    .nav-group {
-        gap: 1rem;
+      .nav-group {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 1rem;
       }
       .nav-links {
         gap: 1rem;
